@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cssApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS classes and styles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.angularjs.org/1.8.0/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+</head>
+
+<body>
+    <div ng-controller="DeathrayMenuController">
+        <ul>
+            <li class="menu-disabled-{{isDisabled}}" ng-click="stun()">Stun 1 (click me)</li>
+            <li>Stun 2</li>
+            <li>Stun 3</li>
+        </ul>
+    </div>
+</body>
+
+</html>
